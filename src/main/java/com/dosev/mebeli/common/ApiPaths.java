@@ -13,4 +13,5 @@ public class ApiPaths {
     public static final String REVIEWS = baseUrl+"/reviews";
     public static final String RETURNS = baseUrl+"/returns";
     public static final String RETURN_STATUSES = baseUrl+"/return-statuses";
+    public static final String ORDER_STATUSES = baseUrl+"/order-statuses";
 }
