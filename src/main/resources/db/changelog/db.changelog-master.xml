@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <include file="db/changelog/changes/001-functions-and-sequences.sql" relativeToChangelogFile="false"/>
+    <include file="db/changelog/changes/002-lookup-tables.sql" relativeToChangelogFile="false"/>
+    <include file="db/changelog/changes/003-catalog-tables.sql" relativeToChangelogFile="false"/>
+    <include file="db/changelog/changes/004-people-tables.sql" relativeToChangelogFile="false"/>
+    <include file="db/changelog/changes/005-commerce-tables.sql" relativeToChangelogFile="false"/>
+
+</databaseChangeLog>
