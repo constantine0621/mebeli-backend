@@ -3,6 +3,7 @@ package com.dosev.mebeli.common;
 public class ApiPaths {
     private static final String baseUrl = "/api";
 
+    public static final String AUTH = baseUrl+"/auth";
     public static final String CATEGORIES = baseUrl+"/category";
     public static final String FURNITURE_TYPES = baseUrl+"/furniture-types";
     public static final String COLORS = baseUrl+"/colors";
