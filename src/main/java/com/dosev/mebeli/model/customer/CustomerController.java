@@ -23,6 +23,11 @@ public class CustomerController {
         return customerService.getAllCustomers();
     }
 
+    @GetMapping("/deleted")
+    public List<CustomerResponse> getAllDeletedCustomers() {
+        return customerService.getAllDeletedCustomers();
+    }
+
     @GetMapping("/{id}")
     public CustomerResponse getCustomer(@PathVariable UUID id) {
         return customerService.getCustomerById(id);

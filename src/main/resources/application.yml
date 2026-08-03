@@ -8,3 +8,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: validate
+
+jwt:
+  secret: "a-very-long-random-secret-string-at-least-256-bits-for-hs256-signing"
+  expiration-ms: 14400000  # 4 hours

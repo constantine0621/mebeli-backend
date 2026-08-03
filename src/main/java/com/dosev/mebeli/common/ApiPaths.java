@@ -9,6 +9,7 @@ public class ApiPaths {
     public static final String MATERIALS = baseUrl+"/materials";
     public static final String FURNITURE_PRODUCTS = baseUrl+"/furniture-products";
     public static final String CUSTOMERS = baseUrl+"/customers";
+    public static final String ADMINS = baseUrl+"/admins";
     public static final String ORDERS = baseUrl+"/orders";
     public static final String REVIEWS = baseUrl+"/reviews";
     public static final String RETURNS = baseUrl+"/returns";

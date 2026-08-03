@@ -50,6 +50,13 @@ public class CustomerService {
                 .toList();
     }
 
+    public List<CustomerResponse> getAllDeletedCustomers() {
+        return repository.findAllDeleted()
+                .stream()
+                .map(mapper::toResponse)
+                .toList();
+    }
+
     public CustomerResponse getCustomerById(UUID id) {
         Customer customer = findCustomerOrThrow(id);
         return mapper.toResponse(customer);

@@ -22,6 +22,11 @@ public class FurnitureProductController {
         return furnitureProductService.getAllFurnitureProducts();
     }
 
+    @GetMapping("/deleted")
+    public List<FurnitureProductResponse> getAllDeletedFurnitureProducts() {
+        return furnitureProductService.getAllDeletedFurnitureProducts();
+    }
+
     @GetMapping("/{id}")
     public FurnitureProductResponse getFurnitureProduct(@PathVariable Integer id) {
         return furnitureProductService.getFurnitureProductById(id);

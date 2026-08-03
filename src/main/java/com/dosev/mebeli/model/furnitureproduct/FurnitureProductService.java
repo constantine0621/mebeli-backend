@@ -35,6 +35,13 @@ public class FurnitureProductService {
 
     public List<FurnitureProductResponse> getAllFurnitureProducts() {
         return repository.findAll()
+                    .stream()
+                .map(mapper::toResponse)
+                .toList();
+    }
+
+    public List<FurnitureProductResponse> getAllDeletedFurnitureProducts() {
+        return repository.findAllDeleted()
                 .stream()
                 .map(mapper::toResponse)
                 .toList();
